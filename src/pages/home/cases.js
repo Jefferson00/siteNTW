@@ -16,7 +16,7 @@ export default function Cases(){
           <div>
             <h1>Hiperconvergencia</h1>
             <p>
-            A NorthWare participou de alguns dos projetos de maior destaque do mercado brasileiro de TI. Seja com clientes do setor público ou empresas privadas.
+            A NorthWare participou de alguns dos projetos de maior destaque do mercado brasileiro de TI. Projetos de Hiperconvergencias deram o que falar bicho
             </p>
             <div className="div-btn-01">
                 <button className="btn-01">SAIBA MAIS</button>

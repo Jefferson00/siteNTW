@@ -3,14 +3,17 @@ import logoImg from './assets/logo.png'
 import slideImg1 from './assets/slide-1.png'
 import slideImg2 from './assets/slide-2.jpg'
 import slideImg3 from './assets/slide-3.jpg'
+import logoLenovo from './assets/Lenovo_Global_Corporate_Logo.png'
+import {NavigateBefore, NavigateNext} from '@material-ui/icons'
 
-function Header(){
-    return(
+export default function Header(){
+    return (
         <header>
             <div className="poly1"></div>
             <div className="poly2"></div>
+            
             <div className="menu">
-            <ul>
+                <ul>
                     <li>
                         <a href='#'>Home</a>
                     </li>
@@ -31,37 +34,33 @@ function Header(){
                     </li>
                 </ul>
             </div>
-            <section className="section-slide">
-            <div className="slide">
-                <div className="img-slide">
-                    <img className="selected" src={slideImg1}/>
-                    <img  src={slideImg2}/>
-                    <img  src={slideImg3}/>
-                    
+            <div class="container">
+                <div class="carousel">
+                    <div class="slider">
+                        <section><img  src={slideImg1}/>
+                            <div> 
+                                <h1>AQUI VOCÊ ENCONTRA AS MELHORES OFERTAS!</h1>
+                                <img src={logoLenovo}/>
+                                <button className="btn-slide">
+                                    CONFIRA
+                                 </button>
+                            </div>
+                        </section>
+                        <section><img  src={slideImg2}/></section>
+                        <section><img  src={slideImg3}/></section>
+                    </div>
+                    <div class="controls">
+                        <span class="arrow prev"><NavigateBefore fontSize="large"></NavigateBefore></span>
+                        <span class="arrow next"><NavigateNext fontSize="large"></NavigateNext></span>
+                    </div>
                 </div>
             </div>
-            <ul className="ul-slider">
-                        <li>
-                            <button className="dot-button-selected"></button>
-                        </li>
-                        <li>
-                            <button className="dot-button"></button>
-                        </li>
-                        <li>
-                            <button className="dot-button"></button>
-                        </li>
-                    </ul>
+           
+
             <div className="logo">
                 <img src={logoImg} alt="logo"/>
             </div>
-            </section>
+
         </header>
-    )
-
-
+    );
 }
-
-
-
-export default Header;
-

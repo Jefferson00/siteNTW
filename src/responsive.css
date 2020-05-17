@@ -1,0 +1,212 @@
+@media (max-width: 1440px){
+    #pcImg{
+        margin: 15% 10%;
+    }
+
+    #scannerImg{
+        margin: 30%;
+    }
+
+    #switchImg{
+        margin: 35% 10%;
+    }
+
+    #serverImg{
+        margin: 25px 55%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1424px){
+    #pcImg{
+        margin: 20% 10%;
+    }
+
+    #scannerImg{
+        margin: 40% 30%;
+    }
+
+    #switchImg{
+        margin: 50% 10px;
+    }
+
+    #serverImg{
+        margin: 25px 50%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1366px){
+    #pcImg{
+        margin: 15% 10%;
+    }
+
+    #scannerImg{
+        margin: 35% 30%;
+    }
+
+    #switchImg{
+        margin: 35% 10px;
+    }
+
+    #serverImg{
+        margin: 25px 55%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1024px){
+    #serverImg{
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+    .poly1, .poly2{
+        display: none;
+    }
+    .menu{
+       clip-path: polygon(0% 40%,100% 55%,100% 0%,0% 0% ,0% 0%);
+    }
+    .logo{
+        padding: 30px;
+    }
+
+    .logo img{
+        height: 50px;
+    }
+
+    #pcImg{
+        margin: 25% 5%;
+        height: 200px;
+    }
+
+    #scannerImg{
+        margin: 50% 30%;
+        height: 200px;
+    }
+
+    #switchImg{
+        margin: 70% 10px;
+        width: 250px;
+    }
+
+    #serverImg{
+        margin: 20% 50%;
+        height: 300px;
+    }
+
+    .up-presentation h1{
+        padding: 20px 0px 0px 50px;
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+    }
+    .down > div{
+        padding: 20px 0 0 50px;
+    }
+    .down > div h1{
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        width: auto;
+    }
+    footer .inform {
+        padding: 30px;
+    }   
+
+    footer .social{
+        padding: 0;
+    }
+    footer .address h1, h2{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 425px){
+    .menu{
+        clip-path: polygon(0% 30%,100% 40%,100% 0%,0% 0% ,0% 0%);
+    }
+
+    .logo{
+        padding: 0 20px;
+    }
+
+    .up-presentation h1{
+        padding: 20px 0px 0px 20px;
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+
+    .down > div{
+        width: 60%;
+        padding: 20px 0 0 20px;
+    }
+
+    .down > div h1{
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+
+    #pcImg{
+        margin: 85% 5%;
+    }
+
+    #scannerImg{
+        margin: 90% 75%;
+    }
+
+    #switchImg{
+        margin: 125% 25px;
+        width: 200px;
+    }
+
+    #serverImg{
+        margin: 20% 35%;
+    }
+
+    .slide-track{
+        width: calc(100px * 14);
+    }
+
+    .slide-track > div{
+        width: 100px;
+    }
+    footer .social h1 {
+        font-size: 1.6rem;
+    }
+    footer .social a svg {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 375px){
+    #pcImg {
+        margin: 95% 5%;
+        height: 150px;
+    }
+    #scannerImg{
+        margin: 100% 70%;
+        height: 150px;
+    }
+    #serverImg {
+        margin: 20% 40%;
+    }
+}
+
+@media (max-width: 320px){
+    #pcImg{
+        margin: 75% 5%;
+    }
+
+    #scannerImg{
+        margin: 120% 85%;
+    }
+
+    #switchImg{
+        margin: 150% 10px;
+    }
+
+    #serverImg{
+        margin: 30% 65%;
+        height: 250px;
+    }
+}

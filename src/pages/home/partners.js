@@ -5,24 +5,45 @@ import nutanixLogo from '../../assets/Nutanix_Logo.png'
 import aocLogo from '../../assets/aoc-logo.png'
 import netscoutLogo from '../../assets/NetScout_logo.png'
 
+
 export default function Partners(){
     return (
-        <section className="partners">
-          <div>
-            <img src={lenovoLogo}/>
-          </div>
-          <div>
-            <img src={nutanixLogo}/>
-          </div>
-          <div>
-            <img src={fujitsuLogo}/>
-          </div>
-          <div>
-            <img src={aocLogo}/>
-          </div>
-          <div>
-            <img src={netscoutLogo}/>
-          </div>
-        </section>
+            <section className="partners">
+            <div class="slide-track">
+            <div>
+              <img src={lenovoLogo}/>
+            </div>
+            <div>
+              <img src={nutanixLogo}/>
+            </div>
+            <div>
+              <img src={fujitsuLogo}/>
+            </div>
+            <div>
+              <img src={aocLogo}/>
+            </div>
+            <div>
+              <img src={netscoutLogo}/>
+            </div>
+            <div>
+              <img src={fujitsuLogo}/>
+            </div>
+            <div>
+              <img src={aocLogo}/>
+            </div>
+            <div>
+              <img src={netscoutLogo}/>
+            </div>
+            <div>
+              <img src={fujitsuLogo}/>
+            </div>
+            <div>
+              <img src={aocLogo}/>
+            </div>
+            <div>
+              <img src={netscoutLogo}/>
+            </div>
+            </div>
+          </section>
         );
   }

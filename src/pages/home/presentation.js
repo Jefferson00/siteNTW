@@ -3,12 +3,13 @@ import pcImg from '../../assets/pc.webp'
 import scannerImg from '../../assets/scanner.png'
 import switchImg from '../../assets/switch.webp'
 import serverImg from '../../assets/server.png'
+import './styles.css'
 
 export default function Presentation(){
     return(
       <section className="presentation">
 
-      <img src={serverImg}/>
+      <img id="serverImg" src={serverImg}/>
       <img id="pcImg" src={pcImg}/>
       <img id="scannerImg" src={scannerImg}/>
       <img id="switchImg" src={switchImg}/>
