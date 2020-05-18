@@ -9,11 +9,11 @@ export default function Presentation(){
     return(
       <section className="presentation">
 
-      <img id="serverImg" src={serverImg}/>
-      <img id="pcImg" src={pcImg}/>
-      <img id="scannerImg" src={scannerImg}/>
-      <img id="switchImg" src={switchImg}/>
-        <div className="up-presentation">
+      <img id="serverImg" src={serverImg} data-anime="show-up"/>
+      <img id="pcImg" src={pcImg} data-anime="show-up"/>
+      <img id="scannerImg" src={scannerImg} data-anime="show-up"/>
+      <img id="switchImg" src={switchImg} data-anime="show-up"/>
+        <div className="up-presentation" data-anime="left">
           <div>
               <h1>
                   COM MAIS DE 20 ANOS <br/>DE EXPERIENCIA <br/>EM TECNOLOGIA
@@ -23,7 +23,8 @@ export default function Presentation(){
               
           </div>
         </div>
-        <div className="down">
+        <div className="down" data-anime="rigth">
+        <div></div>
           <div> 
             <h1>
             A NORTHWARE OFERECE
@@ -33,7 +34,6 @@ export default function Presentation(){
             COM GRANDE VALOR AGREGADO
             </h1>
           </div>
-          <div></div>
         </div>
       </section>
     );
