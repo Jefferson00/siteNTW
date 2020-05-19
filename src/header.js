@@ -15,13 +15,13 @@ export default function Header(){
             <div className="menu">
                 <ul>
                     <li>
-                        <a href='#'>Home</a>
+                        <a href='/'>Home</a>
                     </li>
                     <li>
-                        <a href='#'>Institucional</a>
+                        <a href='#inst'>Institucional</a>
                     </li>
                     <li>
-                        <a href='#'>Atas Governo</a>
+                        <a href='/atas'>Atas Governo</a>
                     </li>
                     <li>
                         <a href='#'>Produtos</a>

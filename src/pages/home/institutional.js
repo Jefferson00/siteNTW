@@ -9,7 +9,7 @@ export default function Institutional(){
     const text2 = "A NorthWare está presente desde 1992, baseada nos conceitos de diferenciação pelo seu compromisso com o cliente. Agrega em seu portfólio produtos de parceiros diversos como Air Tight, Fujitsu, LANDesk, Lenovo, R-Post e Oracle, líderes mundiais do setor. Tornou-se referência no fornecimento de soluções em Tecnologia da Informação (TI) em razão do alto nível dos seus profissionais e do elaborado portfólio em produtos e serviços. Sediada em Brasília, conta com agentes em todo o Brasil, o que a capacita a atuar em projetos de âmbito nacional.  Com profundo conhecimento e experiência no setor governamental, a empresa oferece aos clientes soluções integradas em hardware e software , desde a implementação, o treinamento até o suporte. "
     
     return(
-     <section className="institutional">
+     <section id="inst" className="institutional">
          <div>
            <h1>SOBRE A NORTHWARE</h1>
            <p>

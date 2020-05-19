@@ -1,0 +1,27 @@
+.main-content-produtos{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-produtos{
+    display: flex;
+    justify-content: center;
+}
+
+.item-produtos:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.produtos-img{
+    width: 50%;
+}
+
+.produtos-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.produtos-description > div{
+
+}

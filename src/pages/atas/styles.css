@@ -1,0 +1,86 @@
+
+.itens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itens > div{
+    margin: 20px;
+    color: #565656;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.item-selected{
+    border: 2px solid #0062A8;
+    border-radius: 10px;
+}
+
+.card-item-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    background: #0E8DE8;
+    border-radius: 11px 11px 0 0;
+    justify-content: center;
+    margin: 20px;
+    max-width: 350px;
+}
+
+.card-item h3{
+    text-align: center;
+    color: #EDEDED;
+}
+
+.card-title{
+    color: #BCBDC0;
+    text-align: center;
+    background: #0064AB;
+    border-radius: 11px 11px 0 0;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+}
+
+.card-table-description{
+    padding: 20px
+}
+
+.card-table-description table{
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+.card-table-description table tr td:first-child{
+    color: #D2D2D2;
+}
+
+.card-table-description table tr td:last-child{
+    color: #F6F6F6;
+}
+
+.card-table-description table tr:last-child td:first-child{
+    color: #111010;
+    font-weight: bold;
+}
+
+.card-table-description table tr:last-child{
+    margin: 20px;
+}
+
+.card-table-description table td{
+    width: 50%;
+}
+
+.download-item{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+

@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import Home from './pages/home/home'
 import Atas from './pages/atas/'
+import Produtos from './pages/produtos/'
 
 export default function Routes(){
     return(
@@ -10,6 +11,7 @@ export default function Routes(){
             <Switch>
                 <Route path="/" exact component={Home}></Route>
                 <Route path="/atas" exact component={Atas}></Route>
+                <Route path="/produtos" exact component={Produtos}></Route>
             </Switch>
         </BrowserRouter>
     )
