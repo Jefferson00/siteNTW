@@ -6,19 +6,14 @@ import Institutional from './pages/home/institutional'
 import Cases from './pages/home/cases'
 import Partners from './pages/home/partners'
 import Footer from './footer'
+import Routes from './routes'
 import './global.css';
 import './responsive.css';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Presentation></Presentation>
-      <Highlight></Highlight>
-      <Institutional></Institutional>
-      <Cases></Cases>
-      <Partners></Partners>
-      <Footer></Footer>
+      <Routes/>
     </div>
   );
 }
