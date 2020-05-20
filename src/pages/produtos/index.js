@@ -13,19 +13,19 @@ export default function Produtos(){
                 <div className="menu">
                     <ul>
                         <li>
-                            <a href='#'>Home</a>
+                            <a href='/'>Home</a>
                         </li>
                         <li>
-                            <a href='#'>Institucional</a>
+                            <a href='/'>Institucional</a>
                         </li>
                         <li>
-                            <a href='#'>Produtos</a>
+                            <a href='/atas'>Atas</a>
                         </li>
                         <li>
-                            <a href='#'>Parceiros</a>
+                            <a href='/parceiros'>Parceiros</a>
                         </li>
                         <li>
-                            <a href='#'>Contato</a>
+                            <a href='/contato'>Contato</a>
                         </li>
                     </ul>
                 </div>

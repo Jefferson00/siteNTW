@@ -1,0 +1,26 @@
+.partner-text{
+    padding: 75px;
+}
+
+.partner-text h1{
+    color: #0064AB;
+}
+
+.partner-text h3{
+    color: #565656;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.partner-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.partner-list > div{
+    max-width: 200px;
+    margin: 20px;
+}

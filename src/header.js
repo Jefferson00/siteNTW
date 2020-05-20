@@ -24,13 +24,13 @@ export default function Header(){
                         <a href='/atas'>Atas Governo</a>
                     </li>
                     <li>
-                        <a href='#'>Produtos</a>
+                        <a href='/produtos'>Produtos</a>
                     </li>
                     <li>
-                        <a href='#'>Parceiros</a>
+                        <a href='/parceiros'>Parceiros</a>
                     </li>
                     <li>
-                        <a href='#'>Contato</a>
+                        <a href='/contato'>Contato</a>
                     </li>
                 </ul>
             </div>
