@@ -64,6 +64,7 @@ header{
 
 .header2 .menu{
   clip-path: polygon(0% 100%,100% 60%,100% 0%,0% 0% ,0% 0);
+  height: auto;
 }
 
 .poly1, .poly2{
@@ -248,28 +249,29 @@ footer .inform{
   justify-content: space-between;
   padding: 40px;
 }
-footer .social{
+.social{
   padding: 53px;
 }
 
-footer .social h1{
+.social h1{
   font-size: 1.8rem;
+  color: #D2D2D2;
 }
 
-footer .social >div{
+.social >div{
   display: flex;
   margin-top: 10px;
 }
 
-footer .social >div h1{
+.social >div h1{
   margin: 10px 20px 0 0
 }
 
-footer .social a{
+.social a{
   color: #D2D2D2;
 }
 
-footer .social a svg{
+.social a svg{
   font-size: 3.5rem;
 }
 
