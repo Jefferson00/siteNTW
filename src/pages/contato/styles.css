@@ -79,12 +79,16 @@
     clip-path: polygon(0% 100%,100% 100%,100% 40%,-25% -10% ,0% 0%);
     height: 1500px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .footer-2 .social{
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 .maps{
-
+    align-self: center;
+    width: 80%;
+    height: 300px;
 }

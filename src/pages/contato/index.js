@@ -2,8 +2,7 @@ import React from 'react'
 import {Facebook, Instagram, LinkedIn, Mail, Room, Phone} from '@material-ui/icons'
 import './styles.css'
 import logoImg from '../../assets/logo.png'
-import GoogleApiWrapper from './map'
-
+import MapTest from './map'
 
 export default function Contato(){
     return(
@@ -73,7 +72,10 @@ export default function Contato(){
                 
                 <div className="footer-2">
                     
-
+                    <div className="maps">
+                        <MapTest></MapTest>
+                    </div>
+                    
                     <div className="social">
                         <h1>SIGA-NOS</h1>
                         <div>
@@ -100,9 +102,7 @@ export default function Contato(){
                         </div>
                     </div>
 
-                    <div className="maps">
                     
-                    </div>
 
                 </div>
           

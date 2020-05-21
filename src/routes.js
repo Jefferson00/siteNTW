@@ -7,6 +7,7 @@ import Produtos from './pages/produtos/'
 import Parceiros from './pages/parceiros/'
 import Contato from './pages/contato/'
 
+
 export default function Routes(){
     return(
         <BrowserRouter>
