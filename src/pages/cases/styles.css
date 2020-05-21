@@ -1,0 +1,36 @@
+.text-cases{
+
+}
+
+.cases-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+    margin: 50px auto;
+}
+
+.cases-card{
+    background: #C4C4C4;
+    max-height: 480px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.cases-card.cases-card-grid{
+    display: grid;
+    grid-row: 1/3;
+    grid-column: 1;
+}
+
+.cases-card-grid div{
+    max-height: 300px;
+}
+
+.cases-card-title{
+    grid-row: 1;
+}
+
+.cases-card-span{
+    height: 160px;
+    background: #6B6B6B;
+}
