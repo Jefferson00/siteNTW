@@ -3,8 +3,12 @@ import Footer from '../../footer'
 import './styles.css'
 import Monitor22p1e from '../../assets/aoc22p1e.png'
 import logoImg from '../../assets/logo.png'
+import { Select } from '@material-ui/core'
 
 export default function Atas(){
+
+    
+    
     return(
         <div>
 
@@ -41,14 +45,14 @@ export default function Atas(){
             </div>
         </div>
 
-        <div className="itens">
-            <div>Todos</div>
-            <div className="item-selected">Monitores</div>
-            <div>Computadores</div>
-            <div>Hiperconvergencia</div>
-            <div>Scanners</div>
-            <div>Redes</div>
-            <div>Wi-Fi</div>
+        <div id="item" className="itens">
+            <div id="todos">Todos</div>
+            <div id="monitores" className="item-selected">Monitores</div>
+            <div id="computadores">Computadores</div>
+            <div id="hiper">Hiperconvergencia</div>
+            <div id="scanners">Scanners</div>
+            <div id="redes">Redes</div>
+            <div id="wifi">Wi-Fi</div>
         </div>
 
         <div className="card-item-list">
@@ -249,4 +253,8 @@ export default function Atas(){
         <Footer></Footer>
         </div>
     )
+    
+
 }
+
+    

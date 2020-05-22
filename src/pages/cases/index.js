@@ -56,30 +56,51 @@ export default function Cases(){
                     </div>
                 </div>
                 <div className="cases-card">
-                    <div className="cases-card-title"><p>STJ</p></div>
-                    <div><img src={hl2Img}/></div>
-                    <div className="cases-card-span"><p>LEGENDA</p></div>
+                    <div class="cases-card-grid">
+                        <div className="cases-card-title"><p>STJ</p></div>
+                        <div>
+                             <img src={hl1Img}/>
+                             <p>LEGENDA</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="cases-card">
-                    <div className="cases-card-title"><p>STJ</p></div>
-                    <div><img src={hl3Img}/></div>
-                    <div className="cases-card-span"><p>LEGENDA</p></div>
+                    <div class="cases-card-grid">
+                        <div className="cases-card-title"><p>STJ</p></div>
+                        <div>
+                             <img src={hl1Img}/>
+                             <p>LEGENDA</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="cases-card">
-                    <div className="cases-card-title"><p>STJ</p></div>
-                    <div> <img src={hl1Img}/></div>
-                    <div className="cases-card-span"><p>LEGENDA</p></div>
+                    <div class="cases-card-grid">
+                        <div className="cases-card-title"><p>STJ</p></div>
+                        <div>
+                             <img src={hl1Img}/>
+                             <p>LEGENDA</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="cases-card">
-                    <div className="cases-card-title"><p>STJ</p></div>
-                    <div><img src={hl2Img}/></div>
-                    <div className="cases-card-span"><p>LEGENDA</p></div>
+                    <div class="cases-card-grid">
+                        <div className="cases-card-title"><p>STJ</p></div>
+                        <div>
+                             <img src={hl1Img}/>
+                             <p>LEGENDA</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="cases-card">
-                    <div className="cases-card-title"><p>STJ</p></div>
-                    <div><img src={hl3Img}/></div>
-                    <div className="cases-card-span"><p>LEGENDA</p></div>
+                    <div class="cases-card-grid">
+                        <div className="cases-card-title"><p>STJ</p></div>
+                        <div>
+                             <img src={hl1Img}/>
+                             <p>LEGENDA</p>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
 
         <Footer></Footer>

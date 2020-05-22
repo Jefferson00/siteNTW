@@ -10,6 +10,36 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+const itens = document.querySelectorAll('.itens >div')
+
+for(var i=0; i< itens.length; i++){
+  (function(i){
+    itens[i].addEventListener('click', function(){
+      if(itens[i].id === 'todos'){
+        for(var y=1; y< itens.length; y++){
+          itens[y].classList.remove('item-selected')
+        }
+        itens[i].classList.add('item-selected')
+      }else{
+        if(itens[i].classList.contains('item-selected')){
+          itens[i].classList.remove('item-selected')
+        }else{
+          itens[i].classList.add('item-selected')
+          itens[0].classList.remove('item-selected')
+        }
+      }
+    })
+  })(i);
+  
+}
+
+   
+      
+    
+
+  
+    
+
 /*SLIDER*/
 
 const slider = document.querySelector('.slider');

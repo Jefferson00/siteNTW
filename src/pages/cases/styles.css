@@ -13,7 +13,7 @@
     background: #C4C4C4;
     max-height: 480px;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .cases-card.cases-card-grid{
