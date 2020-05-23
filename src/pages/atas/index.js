@@ -10,7 +10,9 @@ import { Select } from '@material-ui/core'
 export default function Atas(){
 
     let itensProdutos = ['monitores', 'computadores','hiper','scanners','redes','wifi']
-
+    
+   
+    
     return(
         <div>
 

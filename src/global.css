@@ -314,3 +314,49 @@ footer .copy{
     border-top: 1px solid #d2d2d261;
     margin: 0 20px;
 }
+
+.box-modal{
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background: #000000b8;
+  display: none;
+  justify-content: center;
+}
+
+.box-modal-content{
+  background: #ffff;
+    height: 90vh;
+    align-self: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-shadow: 1px 2px 10px 1px #f6f6f6;
+    position: relative;
+}
+
+.box-modal-content div:nth-child(1){
+  width: 100%;
+  align-self: end;
+}
+.box-modal-content div:nth-child(2){
+  background: #505050;
+    grid-row: 2;
+    grid-column: 1;
+    align-self: end;
+    padding: 20px;
+    text-align: center;
+    color: #eaeaea;
+    position: absolute;
+    bottom: 0;
+}
+.box-modal-content div:nth-child(3){
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    color: #f4f2f2;
+    cursor: pointer;
+}

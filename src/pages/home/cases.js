@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 export default function Cases(){
@@ -10,7 +11,7 @@ export default function Cases(){
             A NorthWare participou de alguns dos projetos de maior destaque do mercado brasileiro de TI. Seja com clientes do setor público ou empresas privadas.
             </p>
             <div className="div-btn-01">
-                <button className="btn-01">SAIBA MAIS</button>
+                <Link to="/cases" className="btn-01">SAIBA MAIS</Link>
             </div>
           </div>
           <div>
@@ -19,7 +20,7 @@ export default function Cases(){
             A NorthWare participou de alguns dos projetos de maior destaque do mercado brasileiro de TI. Projetos de Hiperconvergencias deram o que falar bicho
             </p>
             <div className="div-btn-01">
-                <button className="btn-01">SAIBA MAIS</button>
+                  <Link to="/cases" className="btn-01">SAIBA MAIS</Link>
             </div>
           </div>
           <div>
@@ -28,7 +29,7 @@ export default function Cases(){
             A NorthWare participou de alguns dos projetos de maior destaque do mercado brasileiro de TI. Seja com clientes do setor público ou empresas privadas.
             </p>
             <div className="div-btn-01">
-                <button className="btn-01">SAIBA MAIS</button>
+                <Link to="/cases" className="btn-01">SAIBA MAIS</Link>
             </div>
           </div>
         </section>
