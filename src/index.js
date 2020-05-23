@@ -11,6 +11,91 @@ ReactDOM.render(
 );
 
 const itens = document.querySelectorAll('.itens >div')
+const itensProd = document.querySelectorAll('.card-item')
+
+let teste = []
+let coiso = []
+
+function ver(){
+  for(var i=0; i< itens.length; i++){
+        if(itens[i].classList.contains('item-selected')){
+            teste[i] = [itens[i].id , true]
+        }else{
+            teste[i] = [itens[i].id , false]
+        }
+      }
+  for(var x=0;x<itensProd.length;x++){
+      for(var r=0;r< teste.length;r++){
+          if(teste[r][0] === 'todos' && teste[r][1] === true){
+            if (coiso.indexOf(teste[r][0]) == -1){
+              coiso.push(teste[r][0])
+            }
+          }
+          else if(itensProd[x].id === teste[r][0] && teste[r][1] === true){
+              if (coiso.indexOf(teste[r][0]) == -1){
+                  coiso.push(teste[r][0])
+                    var postodos = coiso.indexOf('todos')
+                    if(postodos != -1){
+                        coiso.splice(postodos,1)
+                    }
+              }
+          }
+          else if(itensProd[x].id === teste[r][0] && teste[r][1] === false){
+                  var pos = coiso.indexOf(teste[r][0])
+                  if(pos != -1){
+                      coiso.splice(pos, 1)
+                  }
+          }
+      }
+  }
+
+  for(var x=0;x<itensProd.length;x++){
+    (function(x){
+      if(coiso.length == 0){
+        itensProd[x].style.opacity = 0
+        itensProd[x].style.maxWidth = 0
+        itensProd[x].style.margin = 0
+        setTimeout(()=>{itensProd[x].style.display = "none"},500)
+        
+      }
+      else if(coiso[0] === "todos"){
+        
+        itensProd[x].style.display = "block"
+              
+              setTimeout(()=>{
+                itensProd[x].style.maxWidth = "350px"
+                itensProd[x].style.margin = "20px"
+                itensProd[x].style.opacity = 1
+              },300)
+      }
+      else{
+        for(var i =0; i< coiso.length;i++){
+          var pos1 = coiso.indexOf(itensProd[x].id)
+          
+          if(pos1 != -1){
+              itensProd[x].style.display = "block"
+              
+              setTimeout(()=>{
+                itensProd[x].style.maxWidth = "350px"
+                itensProd[x].style.margin = "20px"
+                itensProd[x].style.opacity = 1
+              },300)
+          }else{
+               itensProd[x].style.opacity = 0
+               itensProd[x].style.maxWidth = 0
+               itensProd[x].style.margin = 0
+               setTimeout(()=>{itensProd[x].style.display = "none"},500)
+          }
+        }
+      }
+    })(x)
+     
+  }
+}
+
+window.addEventListener('load', function(){
+      ver()
+})
 
 for(var i=0; i< itens.length; i++){
   (function(i){
@@ -28,16 +113,11 @@ for(var i=0; i< itens.length; i++){
           itens[0].classList.remove('item-selected')
         }
       }
+      ver();
     })
   })(i);
-  
 }
 
-   
-      
-    
-
-  
     
 
 /*SLIDER*/

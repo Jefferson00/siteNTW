@@ -29,6 +29,13 @@
     justify-content: center;
     margin: 20px;
     max-width: 350px;
+    display: block;
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+.card-item-selected{
+    display: block;
 }
 
 .card-item h3{

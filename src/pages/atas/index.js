@@ -1,14 +1,16 @@
-import React from 'react'
+import React , {useState}from 'react'
 import Footer from '../../footer'
 import './styles.css'
 import Monitor22p1e from '../../assets/aoc22p1e.png'
+import Tiny from '../../assets/tiny.png'
+import Scanner from '../../assets/fujtsu.png'
 import logoImg from '../../assets/logo.png'
 import { Select } from '@material-ui/core'
 
 export default function Atas(){
 
-    
-    
+    let itensProdutos = ['monitores', 'computadores','hiper','scanners','redes','wifi']
+
     return(
         <div>
 
@@ -46,8 +48,8 @@ export default function Atas(){
         </div>
 
         <div id="item" className="itens">
-            <div id="todos">Todos</div>
-            <div id="monitores" className="item-selected">Monitores</div>
+            <div id="todos" className="item-selected">Todos</div>
+            <div id="monitores">Monitores</div>
             <div id="computadores">Computadores</div>
             <div id="hiper">Hiperconvergencia</div>
             <div id="scanners">Scanners</div>
@@ -56,7 +58,7 @@ export default function Atas(){
         </div>
 
         <div className="card-item-list">
-            <div className="card-item">
+            <div id={itensProdutos[0]} className="card-item">
                 <div className="card-title">
                     <h1>MONITOR</h1>
                 </div>
@@ -94,14 +96,14 @@ export default function Atas(){
                 </div>
             </div>
 
-            <div className="card-item">
+            <div id={itensProdutos[3]} className="card-item">
                 <div className="card-title">
-                    <h1>MONITOR</h1>
+                    <h1>SCANNER</h1>
                 </div>
                 <div className="card-img">
-                    <img src={Monitor22p1e}/>
+                    <img src={Scanner}/>
                 </div>
-                <h3>MONITOR AOC 21,5'' 22P1E</h3>
+                <h3>Scanner Fujitsu Fi-7280</h3>
                 <div className="card-table-description">
                     <table>
                         <tr>
@@ -132,7 +134,7 @@ export default function Atas(){
                 </div>
             </div>
             
-            <div className="card-item">
+            <div id={itensProdutos[0]} className="card-item">
                 <div className="card-title">
                     <h1>MONITOR</h1>
                 </div>
@@ -170,7 +172,7 @@ export default function Atas(){
                 </div>
             </div>
 
-            <div className="card-item">
+            <div id={itensProdutos[0]} className="card-item">
                 <div className="card-title">
                     <h1>MONITOR</h1>
                 </div>
@@ -208,31 +210,31 @@ export default function Atas(){
                 </div>
             </div>
 
-            <div className="card-item">
+            <div id={itensProdutos[1]} className="card-item">
                 <div className="card-title">
-                    <h1>MONITOR</h1>
+                    <h1>Microcomputador Tiny</h1>
                 </div>
                 <div className="card-img">
-                    <img src={Monitor22p1e}/>
+                    <img src={Tiny}/>
                 </div>
-                <h3>MONITOR AOC 21,5'' 22P1E</h3>
+                <h3>ThinkCentre M720q</h3>
                 <div className="card-table-description">
                     <table>
                         <tr>
                             <td>Caracteristica:</td>
-                            <td>FullHD, VGA, HDMI,DIsplayPort, Ajuste de Altura, Inclinação e Rotação</td>
+                            <td>Intel Core i5-8500T, 8GB de RAM, 1TB HDD, Windows 10 Professional</td>
                         </tr>
                         <tr>
                             <td>Orgão:</td>
-                            <td>CFP-DF</td>
+                            <td>TSE-DF</td>
                         </tr>
                         <tr>
                             <td>Quantidade Registrada:</td>
-                            <td>76 unidades</td>
+                            <td>385 unidades</td>
                         </tr>
                         <tr>
                             <td>Garantia:</td>
-                            <td>60 Meses</td>
+                            <td>48 Meses</td>
                         </tr>
                         <tr>
                             <td>Validade:</td>
@@ -240,7 +242,7 @@ export default function Atas(){
                         </tr>
                         <tr>
                             <td>Valor únitario registrado:</td>
-                            <td>R$ 600,00</td>
+                            <td>R$ 4.520,20</td>
                         </tr>
                     </table>
                 </div>
