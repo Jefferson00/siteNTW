@@ -39,37 +39,42 @@ export default function Contato(){
                     </div>
                     
                 </div>
+                <div className="contact-content">
+                    <div className="contact-form-container">
+                        <div className="contact-form">
+                            <form>
+                                <div className="input-group">
+                                    <div>
+                                        <label data-end=" *">Nome</label>
+                                        <input type="text"></input>
+                                    </div>
+                                    <div>
+                                        <label data-end=" *">Sobrenome</label>
+                                        <input type="text"></input>
+                                    </div>
+                                </div>    
+                                <label data-end=" *">Email</label>
+                                <input type="email"></input>
+                                <label data-end=" *">Assunto</label>
+                                <input type="text"></input>
+                                <label data-end=" *">Mensagem</label>
+                                <textarea></textarea>
+                                <input type="button" value="ENVIAR"></input>
+                            </form>
 
-                <div className="contact-form-container">
-                    <div className="contact-form">
-                        <form>
-                            <div className="input-group">
-                                <div>
-                                    <label data-end=" *">Nome</label>
-                                    <input type="text"></input>
-                                </div>
-                                <div>
-                                    <label data-end=" *">Sobrenome</label>
-                                    <input type="text"></input>
-                                </div>
-                            </div>    
-                            <label data-end=" *">Email</label>
-                            <input type="email"></input>
-                            <label data-end=" *">Assunto</label>
-                            <input type="text"></input>
-                            <label data-end=" *">Mensagem</label>
-                            <textarea></textarea>
-                            <input type="button" value="ENVIAR"></input>
-                        </form>
-
-                        <div className="informations">
-                            <p><Room fontSize="Large"/> SCN Quadra 01 Bloco F, Ed. América Office Tower, Sala 501 Brasília-DF CEP 70711-905</p>
-                            <p><Phone fontSize="Large"/> 61 3202-9393</p>
-                            <p><Mail fontSize="Large"/> northware@northware.com.br</p>
+                            <div className="informations">
+                                <p><Room fontSize="Large"/> SCN Quadra 01 Bloco F, Ed. América Office Tower, Sala 501 Brasília-DF CEP 70711-905</p>
+                                <p><Phone fontSize="Large"/> 61 3202-9393</p>
+                                <p><Mail fontSize="Large"/> northware@northware.com.br</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
+
+                    <div className="text-contact">
+                        <p>VAMOS CONVERSAR!</p>
+                        <p>Temos uma equipe especializada de vendedores prontos para te atender.</p>
+                    </div>
+                 </div>
                 <div className="footer-2">
                     
                     <div className="maps">

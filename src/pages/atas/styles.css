@@ -32,6 +32,11 @@
     display: block;
     opacity: 1;
     transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.card-item:nth-child(2n){
+    background: #AACFE9;
 }
 
 .card-item-selected{
@@ -43,11 +48,19 @@
     color: #EDEDED;
 }
 
+.card-item:nth-child(2n) h3{
+    color: #2E2D2D;
+}
+
 .card-title{
     color: #BCBDC0;
     text-align: center;
     background: #0064AB;
     border-radius: 11px 11px 0 0;
+}
+
+.card-item:nth-child(2n) .card-title{
+    background: #212121;
 }
 
 .card-img{
@@ -68,8 +81,16 @@
     color: #D2D2D2;
 }
 
+.card-item:nth-child(2n) .card-table-description table tr td:first-child{
+    color: #3A3A3A;
+}
+
 .card-table-description table tr td:last-child{
     color: #F6F6F6;
+}
+
+.card-item:nth-child(2n) .card-table-description table tr td:last-child{
+    color: #414141;
 }
 
 .card-table-description table tr:last-child td:first-child{
@@ -91,3 +112,29 @@
     padding: 50px;
 }
 
+.box-modal-content{
+    flex-direction: row!important;
+}
+
+.box-modal-content div:nth-child(2) {
+    width: 100%;
+}
+
+.box-modal-content div:nth-child(2) {
+    background: #0e8de8 !important;
+}
+
+.table-modal{
+    background: #0064ab;
+    display: flex;
+}
+
+.table-modal table{
+    align-self: center;
+}
+
+.table-modal table tr td{
+    border-bottom: 1px solid #ffffff6b;
+    text-align: left;
+    padding: 20px;
+}
