@@ -10,6 +10,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+/* MENU DE ATAS */
+
 const itens = document.querySelectorAll('.itens >div')
 const itensProd = document.querySelectorAll('.card-item')
 
@@ -118,7 +120,32 @@ for(var i=0; i< itens.length; i++){
   })(i);
 }
 
-    
+/* MENU DOWN */ 
+
+const menu = document.getElementById('menu');
+
+function menuDown(){
+
+  const windowTop = window.pageYOffset +  ((window.innerHeight * 3)/4);
+      target.forEach(function(element){
+          if((windowTop) > element.offsetTop){
+            menu.classList.add('menu-down')
+          }
+      })
+}
+
+function menuUp(){
+        menu.classList.remove('menu-down') 
+}
+
+if(menu != null){
+  window.addEventListener('scroll', function(){
+    menuDown();
+    if(window.scrollY==0&&window.scrollX==0){
+          menuUp();
+    }
+  })
+}
 
 /*SLIDER*/
 

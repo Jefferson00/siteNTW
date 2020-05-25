@@ -91,7 +91,15 @@ header{
   justify-content: flex-end;
   grid-row: 1;
   grid-column: 1;
-  z-index: 1
+  z-index: 2
+}
+
+.menu-down{
+    background: #0064aba6;
+    clip-path: none;
+    height: 100px;
+    z-index: 3;
+    position: fixed;
 }
 
 .menu ul{
@@ -102,6 +110,11 @@ header{
   width: 100%;
   padding: 75px;
 }
+
+.menu-down ul{
+  padding: 50px 90px;
+}
+
 .menu li{
   margin: 10px;
 }

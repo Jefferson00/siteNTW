@@ -17,7 +17,7 @@ export default function Parceiros() {
     return (
         <div>
             <header className="header2">
-                <div className="menu">
+                <div id="menu" className="menu">
                     <ul>
                         <li>
                             <a href='/'>Home</a>

@@ -12,7 +12,7 @@ export default function Header(){
             <div className="poly1"></div>
             <div className="poly2"></div>
             
-            <div className="menu">
+            <div id="menu" className="menu">
                 <ul>
                     <li>
                         <a href='/'>Home</a>

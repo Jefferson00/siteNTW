@@ -1,11 +1,10 @@
-import React , {useState}from 'react'
+import React from 'react'
 import Footer from '../../footer'
 import './styles.css'
 import Monitor22p1e from '../../assets/aoc22p1e.png'
 import Tiny from '../../assets/tiny.png'
 import Scanner from '../../assets/fujtsu.png'
 import logoImg from '../../assets/logo.png'
-import { Select } from '@material-ui/core'
 
 export default function Atas(){
 
@@ -17,7 +16,7 @@ export default function Atas(){
         <div>
 
         <header className="header2">
-            <div className="menu">
+            <div id="menu" className="menu">
                 <ul>
                     <li>
                         <a href='/'>Home</a>
@@ -38,7 +37,7 @@ export default function Atas(){
             </div>
         </header>
 
-        <div className="main-top">
+        <div id="main" className="main-top">
             <div>
                 <img src={logoImg}/>
             </div>
