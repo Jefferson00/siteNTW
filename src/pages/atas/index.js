@@ -6,6 +6,8 @@ import Tiny from '../../assets/tiny.png'
 import Scanner from '../../assets/fujtsu.png'
 import logoImg from '../../assets/logo.png'
 
+
+
 export default function Atas(){
 
     let itensProdutos = ['monitores', 'computadores','hiper','scanners','redes','wifi']

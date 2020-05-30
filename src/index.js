@@ -120,6 +120,11 @@ for(var i=0; i< itens.length; i++){
   })(i);
 }
 
+/* admin*/
+
+
+
+
 /* MENU DOWN */ 
 
 const menu = document.getElementById('menu');

@@ -1,11 +1,11 @@
 
-.itens{
+.itens, .itens-admin{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.itens > div{
+.itens > div, .itens-admin > div{
     margin: 20px;
     color: #565656;
     padding: 10px;
