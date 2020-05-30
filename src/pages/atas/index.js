@@ -12,7 +12,16 @@ export default function Atas(){
 
     let itensProdutos = ['monitores', 'computadores','hiper','scanners','redes','wifi']
     
-   
+
+    function closeModal(){
+        var modal = document.getElementById("modal")
+        modal.style.display = "none";
+    }
+
+    function openModal(){
+        var modal = document.getElementById("modal")
+        modal.style.display = "flex";
+    }
     
     return(
         <div>
@@ -61,7 +70,7 @@ export default function Atas(){
         </div>
 
         <div className="card-item-list">
-            <div id={itensProdutos[0]} className="card-item">
+            <div id={itensProdutos[0]} className="card-item" onClick={()=> openModal()}>
                 <div className="card-title">
                     <h1>MONITOR</h1>
                 </div>
@@ -99,7 +108,7 @@ export default function Atas(){
                 </div>
             </div>
 
-            <div id={itensProdutos[3]} className="card-item">
+            <div id={itensProdutos[3]} className="card-item" onClick={()=> openModal()}>
                 <div className="card-title">
                     <h1>SCANNER</h1>
                 </div>
@@ -137,7 +146,7 @@ export default function Atas(){
                 </div>
             </div>
             
-            <div id={itensProdutos[0]} className="card-item">
+            <div id={itensProdutos[0]} className="card-item" onClick={()=> openModal()}>
                 <div className="card-title">
                     <h1>MONITOR</h1>
                 </div>
@@ -175,7 +184,7 @@ export default function Atas(){
                 </div>
             </div>
 
-            <div id={itensProdutos[0]} className="card-item">
+            <div id={itensProdutos[0]} className="card-item" onClick={()=> openModal()}>
                 <div className="card-title">
                     <h1>MONITOR</h1>
                 </div>
@@ -213,7 +222,7 @@ export default function Atas(){
                 </div>
             </div>
 
-            <div id={itensProdutos[1]} className="card-item">
+            <div id={itensProdutos[1]} className="card-item" onClick={()=> openModal()}>
                 <div className="card-title">
                     <h1>Microcomputador Tiny</h1>
                 </div>
@@ -256,6 +265,50 @@ export default function Atas(){
             <button className="download">DOWNLOAD PDF</button>
         </div>
         <Footer></Footer>
+
+        <div id="modal" className="box-modal">
+            <div className="box-modal-content">
+                <div><img src={Monitor22p1e}/></div>
+                <div>
+                    <div className="table-modal">
+                        <table>
+                            <tr>
+                                <td>Caracteristica:</td>
+                                <td>FullHD, VGA, HDMI,DIsplayPort, Ajuste de Altura, Inclinação e Rotação
+                                    Cabos DisplayPort e HDMI
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Orgão:</td>
+                                <td>CFP-DF</td>
+                            </tr>
+                            <tr>
+                                <td>Quantidade Registrada:</td>
+                                <td>76 unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Garantia:</td>
+                                <td>60 Meses</td>
+                            </tr>
+                            <tr>
+                                <td>Validade:</td>
+                                <td>Janeiro de 2020</td>
+                            </tr>
+                            <tr>
+                                <td>Valor únitario registrado:</td>
+                                <td>R$ 600,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                </div>
+                <div onClick={() =>closeModal()}>
+                    X
+                </div>
+            </div>
+        </div>
+
         </div>
     )
     

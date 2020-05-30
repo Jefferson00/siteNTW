@@ -29,3 +29,29 @@
     width: 80%;
     height: 300px;
 }
+
+.contact-content{
+
+    display: flex;
+    width: 100%;
+   
+}
+
+.text-contact{
+    width: 50%;
+    height: 500px;
+    right: 0;
+    position: absolute;
+    padding: 0 20px 0 200px;
+    text-align: center;
+}
+
+.text-contact p {
+    font-size: 6.2rem;
+    color: #0064ab;
+}
+
+.text-contact p:nth-child(2) {
+    font-size: 3rem;
+    color: #6a8091;
+}
