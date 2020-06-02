@@ -1,34 +1,54 @@
-.header-admin, .header-admin2{
+
+/*login.js*/
+.main-content, .main-content-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-content-div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+
+.header-admin, .header-admin-index{
     background: #0064AB;
     display: flex;
     padding: 20px;
 }
 
-.header-admin2{
+.header-admin-index{
     justify-content: space-between;
 }
 
-.header-admin2 div{
+.header-admin-index div{
     display: flex;
 }
 
-.header-admin > div, .header-admin2 div{
+.header-admin > div, .header-admin-index div{
     margin: 0 20px;
     align-self: center;
 }
 
-.header-admin > div img, .header-admin2 div img{
+.header-admin > div img, .header-admin-index div img{
     height: 50px;
 }
 
-.header-admin > div h3, .header-admin2 div h3, p{
+.header-admin > div h3, .header-admin-index div h3, p{
     color: #EFEFEF;
 }
 
-.main-content{
+/*DIV LOGIN*/
+
+.main-content-div-login{
     display: flex;
+    flex: 1;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
 }
 
 .main-content-login{
@@ -36,12 +56,59 @@
     box-sizing: border-box;
     align-self: center;
     padding: 20px 50px;
-    min-width: 500px;
+    max-width: 200px;
+    min-width: 30%;
 }
 
 .main-content-login > div{
     margin: 20px;
     padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-login > div img{
+    height: 50px;
+}
+
+
+
+/*index*/
+.itens-admin{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itens-admin > div{
+    margin: 20px;
+    color: #565656;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-content-index{
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1900px;
+    flex-wrap: wrap;
+}
+
+.grid{
+    display: grid !important;
+    min-width: 40% !important;
+  }
+
+  .contact-form.grid form{
+    grid-row: 1;
+    grid-column: 1;
+    opacity: 0;
+}
+
+.contact-form.grid form.active{
+    opacity: 1;
+    z-index: 1;
 }
 
 .content-list{
@@ -49,11 +116,15 @@
     max-height: 500px;
     overflow: overlay;
     padding: 20px;
+    min-width: 40%;
 }
 
 .content-list ul li{
     background: #d2d2d2;
     padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 }
 
 .content-list ul li:nth-child(2n){
@@ -65,13 +136,3 @@
     justify-content: space-between;
 }
 
-.contact-form.grid form{
-    grid-row: 1;
-    grid-column: 1;
-    opacity: 0;
-}
-
-.contact-form.grid form.active{
-    opacity: 1;
-    z-index: 1;
-}

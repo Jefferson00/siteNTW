@@ -152,7 +152,7 @@ export default function Admin(){
 
 return(
     <div>
-            <header className="header-admin2">
+            <header className="header-admin-index">
                 <div>
                     <div>
                         <img src={logoW}/>
@@ -179,7 +179,7 @@ return(
                 <div id="usuarios">Usuários</div>
             </div>
 
-            <div className="main-content">
+            <div className="main-content-index">
                 <div className="contact-form grid">
                     <form id="atas" className="active">
                         <label data-end=" *">Produto</label>
@@ -283,9 +283,13 @@ return(
                     <ul>
                         {users.map(user => (
                             <li key={user.id}>
-                            Usuário: {user.name}; 
-                            <button className="btn-edit" onClick={()=> {clickEdit(user.id)}}><Edit/></button>
-                            <button className="btn-delete" onClick={()=> {deleteUser(user.id)}}><Delete/></button>
+                                <div>
+                                    Usuário: {user.name}; 
+                                </div>
+                                <div>
+                                    <button className="btn-edit" onClick={()=> {clickEdit(user.id)}}><Edit/></button>
+                                    <button className="btn-delete" onClick={()=> {deleteUser(user.id)}}><Delete/></button>
+                                </div>
                             </li>
                         ))}
                     </ul>

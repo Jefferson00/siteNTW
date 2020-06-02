@@ -162,12 +162,14 @@ header{
     align-self: center;
     margin: 30px;
     cursor: pointer;
+    transition: 400ms;
+    text-align: center;
 }
 
 .btn-delete, .btn-edit{
-  width: auto;
-  height: auto;
-  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
     margin: 10px;
 }
 
@@ -177,6 +179,11 @@ header{
 
 .btn-edit{
   background: #F16428 !important;
+}
+
+.btn-delete:hover, .btn-edit:hover{
+  color: #ffffff;
+  filter: brightness(1.1);
 }
 /*
 SLIDER
@@ -317,10 +324,6 @@ SLIDER
   align-self: center;
   width: 50%;
   cursor: pointer;
-}
-
-.grid{
-  display: grid;
 }
 
 
